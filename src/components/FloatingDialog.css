@@ -1,0 +1,134 @@
+/* ============================================================
+   FloatingDialog – speech bubble that follows player position
+   ============================================================ */
+
+.floating-dialog {
+  position: absolute;
+  z-index: 150;
+  transform: translateX(-50%) translateY(6px);
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  max-width: 70%;
+  width: max-content;
+}
+
+.floating-dialog--show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── Bubble ────────────────────────────────────────────────── */
+.floating-bubble {
+  background: linear-gradient(135deg, rgba(255, 243, 248, 0.97) 0%, rgba(255, 228, 240, 0.97) 100%);
+  border: 2px solid #f8a5c2;
+  border-radius: 14px;
+  padding: 8px 14px;
+  box-shadow:
+    0 4px 16px rgba(232, 67, 147, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  position: relative;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Speech triangle pointing down toward the player */
+.floating-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid #f8a5c2;
+}
+
+/* Inner triangle for gradient fill */
+.floating-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid rgba(255, 240, 245, 0.97);
+  z-index: 1;
+}
+
+/* ── Text ──────────────────────────────────────────────────── */
+.floating-text {
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  font-size: 8px;
+  line-height: 1.6;
+  color: #2d3436;
+  margin: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  letter-spacing: 0.2px;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .floating-dialog {
+    /* Center on mobile – override inline left/bottom */
+    left: 50% !important;
+    bottom: auto !important;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(6px);
+    max-width: 85%;
+  }
+  .floating-dialog--show {
+    transform: translate(-50%, -50%);
+  }
+  /* Hide speech triangle on mobile centered mode */
+  .floating-bubble::after,
+  .floating-bubble::before {
+    display: none;
+  }
+  .floating-bubble {
+    padding: 10px 14px;
+    border-radius: 12px;
+  }
+  .floating-text {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-bubble {
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+  .floating-text {
+    font-size: 7px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 360px) {
+  .floating-text {
+    font-size: 6px;
+  }
+  .floating-bubble {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .floating-text {
+    font-size: 9px;
+  }
+  .floating-bubble {
+    padding: 10px 16px;
+    border-radius: 16px;
+  }
+}

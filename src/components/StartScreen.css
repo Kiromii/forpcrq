@@ -1,0 +1,140 @@
+.start-screen {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: linear-gradient(180deg, #ffe4f0 0%, #ffd6e8 50%, #fff0f5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.start-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+
+.start-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 30px 20px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.start-logo {
+  margin-bottom: 16px;
+}
+
+.logo-heart {
+  font-size: 48px;
+  display: block;
+  animation: pulse-heart 1.5s ease-in-out infinite;
+}
+
+.start-title {
+  font-size: 28px;
+  color: #e84393;
+  margin: 8px 0 0 0;
+  text-shadow: 2px 2px 0 #f8a5c2;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.start-sub-title {
+  font-size: 13px;
+  color: #d63071;
+  margin: 6px 0 0 0;
+  font-weight: normal;
+}
+
+.start-subtitle {
+  font-size: 11px;
+  color: #636e72;
+  min-height: 36px;
+  margin: 12px 0 20px 0;
+  transition: opacity 0.4s;
+  line-height: 1.7;
+  padding: 0 8px;
+}
+
+.start-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.start-controls {
+  font-size: 9px;
+  color: #b2bec3;
+  margin-top: 20px;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+@keyframes pulse-heart {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* ── Responsive ─────── */
+@media (max-width: 480px) {
+  .start-content {
+    padding: 20px 14px;
+  }
+  .logo-heart {
+    font-size: 36px;
+  }
+  .start-title {
+    font-size: 20px;
+  }
+  .start-sub-title {
+    font-size: 11px;
+  }
+  .start-subtitle {
+    font-size: 9px;
+  }
+  .start-controls {
+    font-size: 8px;
+  }
+  .pixel-btn {
+    font-size: 10px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .start-title {
+    font-size: 16px;
+  }
+  .start-sub-title {
+    font-size: 9px;
+  }
+  .logo-heart {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .start-title {
+    font-size: 32px;
+  }
+  .start-sub-title {
+    font-size: 16px;
+  }
+  .start-subtitle {
+    font-size: 13px;
+  }
+}
