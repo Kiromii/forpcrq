@@ -81,7 +81,7 @@ export default function EndingScreen({ onRestart }) {
 
       <div className="ending-content" ref={containerRef}>
         <div className="ending-heart-big">💖</div>
-        <h2 className="pixel-text ending-title">Untukmu, Silvia</h2>
+        <h2 className="pixel-text ending-title">Untukmu, Pacar Akuu Silvia</h2>
 
         <div className="confession-container">
           {Array.from({ length: currentLine + 1 }, (_, i) => (
@@ -94,7 +94,7 @@ export default function EndingScreen({ onRestart }) {
             <div className="ending-hearts-row">💕 💗 💖 💗 💕</div>
             <p className="ending-note">Semoga suka ya sama gamenya, maaf kalo masih banyak banget kurangnya sayangku</p>
             <button className="pixel-btn primary" onClick={handleRestart}>
-              Main Lagi 🔄
+              Main Lagi
             </button>
           </div>
         )}

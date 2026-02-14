@@ -2,21 +2,21 @@
 // Valentine Quest – Array Dialog (mudah dikustomisasi!)
 // ============================================================
 
-export const startScreenDialogs = ['Aloo Pacarku, hari ini beda dari biasanya.', 'Ada sesuatu yang nungguin kamu, lho.', 'Udah siap belum? Ayo mulai~', 'Ini dunia kecil yang aku bikin buat kamu, Pacarr abii.'];
+export const startScreenDialogs = ['heLow Pacarku, hari ini kyaknya ada yang beda dari biasanya.', 'Ada sesuatu yang nungguin kamu, ASEQQ.', 'Udah siap belum? Ayo mulai', 'Ini dunia kecil yang aku bikin buat kamu, Pacarre abii.'];
 
 // ── Level 1 – Pagi Valentine ──────────────────────────────
 export const level1Intro = ['Pagi, Pacarkuu~ bangun dong, jangan males.', 'Jam wekernya ngamuk tuh. Kabur yuk!', 'Ada hati ku bertebaran. Ambil semua, ya aseQ!'];
 
 export const level1Pickup = [
   'Eh dapet hati. Kecil-kecil gitu, kayak kamu.',
-  'Satu lagi~ rajin banget sih.',
+  'Satu lagi sayang, ayooo..',
   'Cie koleksi hatinya nambah terus.',
   'Hatinya langsung jinak pas kamu pegang.',
   'Yang ini udah lama nungguin kamu, Suayangg.',
-  'Tiap hati yang kamu ambil bikin aku senyum.',
+  'Tiap hati yang kamu ambil itu nambah sayangku ke kamu aseQ',
 ];
 
-export const level1Hit = ['Aduh, wekernya jahat banget!', 'Pacarku jangan nabrak ya~', 'Weker itu nggak tau lagi berurusan sama siapa.'];
+export const level1Hit = ['Aduh, wekernya jahat banget!', 'Pacarku jangan nabrak ya!', 'Weker itu nggak tau lagi berurusan sama siapa.'];
 
 export const level1Complete = ['Pagi selesai! Kamu resmi jadi pengumpul hatiku yang paling lucu, UASEQQ.'];
 
@@ -34,10 +34,10 @@ export const level2Pickup = [
 
 export const level2Hit = ['Kaktus! Nggak romantis sama sekali.', 'Ups, hati-hati Sayangkuu. Duri tuh!', 'Tanaman galak. Minggir aja deh.'];
 
-export const level2Complete = ['Semua siap! Tinggal kencannya, sama Pacarku AseaQ.'];
+export const level2Complete = ['Semua siap! Tinggal ketemuannya, sama Pacarku AseaQ.'];
 
 // ── Level 3 – Waktu Kencan ─────────────────────────────────────
-export const level3Intro = ['Oke, ini bagian favoritku. Jalan bareng yuk~', 'Langit malamnya bagus. Cocok buat kita berdua.', 'Santai aja, Sayangkuu. Nggak usah buru-buru.'];
+export const level3Intro = ['Okei, ini bagian favoritku. Jalan bareng yu', 'Langit malemnya bagus. Cocok buat kita berdua aseQQ.', 'Santai aja, Sayangkuu. Nggak usah buru-buru.'];
 
 export const level3Pickup = [
   'Bintang jatuh! Cepet bikin permintaan.',
