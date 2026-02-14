@@ -5,7 +5,7 @@
 export const startScreenDialogs = ['heLow Pacarku, hari ini kyaknya ada yang beda dari biasanya.', 'Ada sesuatu yang nungguin kamu, ASEQQ.', 'Udah siap belum? Ayo mulai', 'Ini dunia kecil yang aku bikin buat kamu, Pacarre abii.'];
 
 // ── Level 1 – Pagi Valentine ──────────────────────────────
-export const level1Intro = ['Pagi, Pacarkuu~ bangun dong, jangan males.', 'Jam wekernya ngamuk tuh. Kabur yuk!', 'Ada hati ku bertebaran. Ambil semua, ya aseQ!'];
+export const level1Intro = ['Malamm, Pacarkuu, kamu dah ngantuk belum? main game bentar yu hehe sama abi.', 'Jam wekernya ngamuk tuh. Kabur yuu', 'Ada hati ku bertebaran. Ambil semua, ya aseQ!'];
 
 export const level1Pickup = [
   'Eh dapet hati. Kecil-kecil gitu, kayak kamu.',
